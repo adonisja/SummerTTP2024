@@ -10,9 +10,9 @@ def main():
     else:
         print("Meh, I guess you're already here")
     print('Stocks you can afford are: ')
-    for i in range(len(stock_prices)):
-        if stock_prices.values(i) < budget:
-            print(stock_prices.keys(i))
+    for i in stock_prices:
+        if stock_prices[i] <= budget:
+            print(i)
 
 if __name__ == "__main__":
     main()
